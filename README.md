@@ -9,7 +9,7 @@ A vector clock is an algorithm which follows a partial ordering of events in a d
 *	Every time a process sends a message, it increments its own logical clock in the vector by one and then sends a copy of its own vector.
 *	Every time a process receives a message, it increments its own logical clock in the vector by one and updates each element in its vector by taking the maximum of the value in its own vector clock and the value in the vector in the received message (for every element).
  
-We were able to grasp the concept of vector clocks. Implementing the timestamps and passing them across the processes was a very difficult issue we faced.
+Was able to grasp the concept of vector clocks. Implementing the timestamps and passing them across the processes was a very difficult issue we faced.
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
